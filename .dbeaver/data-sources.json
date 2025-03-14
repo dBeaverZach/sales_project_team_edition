@@ -1,0 +1,40 @@
+{
+	"folders": {},
+	"connections": {
+		"mysql8-19596adf6aa-8264a094ceec18f": {
+			"provider": "mysql-ee",
+			"driver": "mysql8",
+			"name": "MySQL@192.168.1.19",
+			"save-password": true,
+			"configuration": {
+				"host": "192.168.1.19",
+				"port": "3306",
+				"database": "mydb",
+				"url": "jdbc:mysql://192.168.1.19:3306/mydb",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native",
+				"bootstrap": {
+					"autocommit": true
+				}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": true,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800,
+			"auto-close-connections": true,
+			"close-connections-period": 14400
+		}
+	}
+}
