@@ -1,16 +1,14 @@
 {
 	"folders": {},
 	"connections": {
-		"mysql8-19596adf6aa-8264a094ceec18f": {
+		"mysql8-19596d57491-77e814f082f3decb": {
 			"provider": "mysql-ee",
 			"driver": "mysql8",
-			"name": "MySQL@192.168.1.19",
-			"save-password": true,
+			"name": "MySQL@192.168.1.19 (1)",
 			"configuration": {
 				"host": "192.168.1.19",
 				"port": "3306",
-				"database": "mydb",
-				"url": "jdbc:mysql://192.168.1.19:3306/mydb",
+				"url": "jdbc:mysql://192.168.1.19:3306/",
 				"configurationType": "MANUAL",
 				"type": "dev",
 				"closeIdleConnection": true,
