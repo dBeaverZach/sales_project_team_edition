@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?><dataset draft="false"><queries><query id="1526277d-9f94-4377-ac0c-b24a5adc896e" data-source="mysql8-19596adf6aa-8264a094ceec18f" queryText="SELECT * FROM Chinook.Customer c where Country = &#39;USA&#39;
+LIMIT 0, 200" catalog="Chinook"/></queries></dataset>
