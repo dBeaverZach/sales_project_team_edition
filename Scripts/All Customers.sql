@@ -1,0 +1,1 @@
+select * from Chinook.Customer c
