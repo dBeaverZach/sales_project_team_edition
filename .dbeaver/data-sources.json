@@ -22,7 +22,7 @@
 		"cql-195a507d786-390b43314fde19ff": {
 			"provider": "mongodb",
 			"driver": "cql",
-			"name": "local",
+			"name": "MongoDB",
 			"save-password": true,
 			"configuration": {
 				"host": "192.168.1.19",
