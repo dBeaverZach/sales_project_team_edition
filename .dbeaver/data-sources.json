@@ -25,9 +25,10 @@
 			"name": "local",
 			"save-password": true,
 			"configuration": {
-				"host": "localhost",
+				"host": "192.168.1.19",
 				"port": "27017",
 				"database": "local",
+				"url": "mongo://192.168.1.19:27017/local",
 				"configurationType": "MANUAL",
 				"type": "dev",
 				"closeIdleConnection": true,
@@ -37,7 +38,10 @@
 					"authMechanism": "NONE",
 					"authSource": "admin"
 				},
-				"auth-model": "mongodb_default"
+				"auth-model": "mongodb_default",
+				"bootstrap": {
+					"autocommit": true
+				}
 			}
 		}
 	},
