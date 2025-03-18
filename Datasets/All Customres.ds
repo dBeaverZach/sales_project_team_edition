@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?><dataset draft="false"><queries><query id="c872bce9-ee32-49f4-ae26-426384fcffea" data-source="mysql8-19596d57491-77e814f082f3decb" queryText="SELECT * FROM Customer c
+LIMIT 0, 200" catalog="Chinook"/></queries></dataset>
