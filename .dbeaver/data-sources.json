@@ -44,28 +44,6 @@
 					"autocommit": true
 				}
 			}
-		},
-		"aws_athena_jdbc_simba-195d36c4a60-388e680e167bf45": {
-			"provider": "athena",
-			"driver": "aws_athena_jdbc_simba",
-			"origin": {
-				"$type": "cloud",
-				"cloud-provider": "aws",
-				"cloud-id": "aws_1",
-				"cloud-zone-id": "us-east-1",
-				"aws-resource": "arn:aws:athena:us-east-1"
-			},
-			"name": "Athena - us-east-1 (859245062624)",
-			"save-password": true,
-			"configuration": {
-				"port": "444",
-				"server": "us-east-1",
-				"database": "s3://aws-athena-query-results-859245062624-us-east-1",
-				"configurationType": "MANUAL",
-				"type": "dev",
-				"closeIdleConnection": true,
-				"auth-model": "iam_simple"
-			}
 		}
 	},
 	"connection-types": {
