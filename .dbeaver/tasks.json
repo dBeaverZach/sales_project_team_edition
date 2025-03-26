@@ -1,0 +1,88 @@
+{
+	"c2669e66-1197-4a4b-872b-557f9fdd7d35": {
+		"task": "dataExport",
+		"label": "Export Customers",
+		"description": "",
+		"createTime": "202503261002",
+		"updateTime": "202503261002",
+		"state": {
+			"producers": [
+				{
+					"type": "databaseTransferProducer",
+					"location": {
+						"type": "entity",
+						"project": "Sales Project",
+						"entityId": "mysql8-19596d57491-77e814f082f3decb/Chinook/Customer"
+					}
+				}
+			],
+			"consumers": [
+				{
+					"type": "streamTransferConsumer"
+				}
+			],
+			"configuration": {
+				"maxJobCount": 1,
+				"showFinalMessage": true,
+				"DatabaseTransferProducer": {
+					"extractType": "SINGLE_QUERY",
+					"segmentSize": 100000,
+					"fetchSize": 10000,
+					"openNewConnections": true,
+					"queryRowCount": true,
+					"selectedColumnsOnly": false,
+					"selectedRowsOnly": false
+				},
+				"StreamTransferConsumer": {
+					"lobExtractType": "INLINE",
+					"lobEncoding": "BINARY",
+					"dataFileConflictBehavior": "ASK",
+					"blobFileConflictBehavior": "ASK",
+					"outputFolder": "/Users/zachantunes/Downloads",
+					"outputFilePattern": "${table}_${timestamp}",
+					"outputEncoding": "UTF-8",
+					"outputTimestampPattern": "yyyyMMddHHmm",
+					"outputEncodingBOM": false,
+					"outputClipboard": false,
+					"useSingleFile": false,
+					"compressResults": false,
+					"splitOutFiles": false,
+					"maxOutFileSize": 10000000,
+					"valueFormat": "UI"
+				},
+				"producer": "database_producer",
+				"consumer": "stream_consumer",
+				"processor": "stream.csv",
+				"processors": {
+					"stream_producer:stream.csv": {
+						"@propNames": "trimWhitespaces,escapeChar,quoteChar,extension,columnTypeMinimalLength,delimiter,columnTypeSamplesCount,header,timestampFormat,encoding,",
+						"trimWhitespaces": "false",
+						"escapeChar": "\\",
+						"quoteChar": "\"",
+						"extension": "csv,tsv,txt",
+						"columnTypeMinimalLength": "50",
+						"delimiter": ",",
+						"columnTypeSamplesCount": "100",
+						"header": "top",
+						"timestampFormat": "yyyy-MM-dd[ HH:mm:ss[.SSS]]",
+						"encoding": "utf-8"
+					},
+					"stream_consumer:stream.csv": {
+						"@propNames": "quoteChar,rowDelimiter,extension,headerFormat,delimiter,header,formatNumbers,quoteAlways,headerCase,quoteNever,escape,",
+						"quoteChar": "\"",
+						"rowDelimiter": "default",
+						"extension": "csv",
+						"headerFormat": "label",
+						"delimiter": ",",
+						"header": "top",
+						"formatNumbers": "false",
+						"quoteAlways": "disabled",
+						"headerCase": "as is",
+						"quoteNever": "false",
+						"escape": "quotes"
+					}
+				}
+			}
+		}
+	}
+}
