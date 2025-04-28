@@ -22,12 +22,12 @@
 				}
 			],
 			"configuration": {
-				"maxJobCount": 1,
+				"maxJobCount": 1.0,
 				"showFinalMessage": true,
 				"DatabaseTransferProducer": {
 					"extractType": "SINGLE_QUERY",
-					"segmentSize": 100000,
-					"fetchSize": 10000,
+					"segmentSize": 100000.0,
+					"fetchSize": 10000.0,
 					"openNewConnections": true,
 					"queryRowCount": true,
 					"selectedColumnsOnly": false,
@@ -47,7 +47,7 @@
 					"useSingleFile": false,
 					"compressResults": false,
 					"splitOutFiles": false,
-					"maxOutFileSize": 10000000,
+					"maxOutFileSize": 1.0E7,
 					"valueFormat": "UI"
 				},
 				"producer": "database_producer",
@@ -83,6 +83,27 @@
 					}
 				}
 			}
+		}
+	},
+	"c9669262-a6ab-4054-82c3-2f8c14fb2169": {
+		"task": "scriptExecute",
+		"label": "Run a Script",
+		"description": "",
+		"createTime": "202504281031",
+		"updateTime": "202504281031",
+		"state": {
+			"scriptFiles": [
+				"Scripts/USA Customers Script.sql"
+			],
+			"dataSources": [
+				{
+					"project": "Sales Project",
+					"dataSource": "mysql8-19596d57491-77e814f082f3decb"
+				}
+			],
+			"ignoreErrors": false,
+			"dumpQueryResultsToLog": false,
+			"autoCommit": false
 		}
 	}
 }
