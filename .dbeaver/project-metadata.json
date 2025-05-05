@@ -1,1 +1,1 @@
-{"resources":{"Scripts/Artist Query.sql":{"default-projectId":"s_Sales Project"},"Scripts/USA Customers Script.sql":{"default-projectId":"s_Sales Project","default-datasource":"mysql8-19596d57491-77e814f082f3decb"}}}
+{"resources":{"Scripts/Artist Query.sql":{"default-projectId":"s_Sales Project","default-datasource":"mysql8-19596d57491-77e814f082f3decb"},"Scripts/USA Customers Script.sql":{"default-projectId":"s_Sales Project","default-datasource":"mysql8-19596d57491-77e814f082f3decb"}}}
