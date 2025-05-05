@@ -49,6 +49,7 @@
 			}
 		}
 	},
+	"virtual-models": {"mysql8-19596d57491-77e814f082f3decb":{"Chinook":{":Track":{"foreign-keys":[{"entity":"node://s_Sales Project/datasources/mysql8-19596d57491-77e814f082f3decb/database/Chinook/table/Employee","constraint":"Employee_VK","attributes":{"AlbumId":"Country"}}]},":Employee":{"constraints":{"Employee_VK":{"type":"vpk","attributes":["Country"]}}}}}},
 	"connection-types": {
 		"dev": {
 			"name": "Development",
