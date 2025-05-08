@@ -47,27 +47,6 @@
 					"autocommit": true
 				}
 			}
-		},
-		"mysql8-196b1a1d1ed-3df2deb3cbf7207f": {
-			"provider": "mysql-ee",
-			"driver": "mysql8",
-			"origin": {
-				"$type": "cloud",
-				"cloud-provider": "azure",
-				"cloud-id": "azure_1",
-				"cloud-zone-id": "eastus",
-				"azure-resource": "/subscriptions/ea6bbfd0-71c4-47ef-a0ba-164defd3a176/resourceGroups/res-group1/providers/Microsoft.DBforMySQL/flexibleServers/dbeaver-mysql"
-			},
-			"name": "MySQL - dbeaver-mysql",
-			"save-password": true,
-			"configuration": {
-				"host": "dbeaver-mysql.mysql.database.azure.com",
-				"port": "3306",
-				"configurationType": "MANUAL",
-				"type": "dev",
-				"closeIdleConnection": true,
-				"auth-model": "azure_ad_mysql"
-			}
 		}
 	},
 	"virtual-models": {"mysql8-19596d57491-77e814f082f3decb":{"Chinook":{":Track":{"foreign-keys":[{"entity":"node://s_Sales Project/datasources/mysql8-19596d57491-77e814f082f3decb/database/Chinook/table/Employee","constraint":"Employee_VK","attributes":{"AlbumId":"Country"}}]},":Employee":{"constraints":{"Employee_VK":{"type":"vpk","attributes":["Country"]}}}}}},
