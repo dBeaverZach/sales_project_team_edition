@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><dataset draft="false"><queries><query id="c987d520-ce57-44e7-aced-69199bafb831" data-source="mysql8-19596d57491-77e814f082f3decb" queryText="SELECT
+  a2.Name,
+  a.AlbumId,
+  t.Name
+FROM
+  Chinook.Artist a2
+INNER JOIN Chinook.Album a ON
+  a2.ArtistId = a.ArtistId
+INNER JOIN Chinook.Track t ON
+  a.AlbumId = t.AlbumId
+LIMIT 0, 200"/></queries></dataset>
