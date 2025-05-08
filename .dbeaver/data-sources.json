@@ -47,6 +47,27 @@
 					"autocommit": true
 				}
 			}
+		},
+		"azure-ee-196b1a0267b-307964a513dce8cb": {
+			"provider": "sqlserver-ee",
+			"driver": "azure-ee",
+			"origin": {
+				"$type": "cloud",
+				"cloud-provider": "azure",
+				"cloud-id": "azure_1",
+				"cloud-zone-id": "swedencentral",
+				"azure-resource": "/subscriptions/ea6bbfd0-71c4-47ef-a0ba-164defd3a176/resourceGroups/res-group1/providers/Microsoft.Sql/servers/dbeaver"
+			},
+			"name": "Azure SQL Server - dbeaver",
+			"save-password": true,
+			"configuration": {
+				"host": "dbeaver.database.windows.net",
+				"port": "1433",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "azure_ad_sqlserver"
+			}
 		}
 	},
 	"virtual-models": {"mysql8-19596d57491-77e814f082f3decb":{"Chinook":{":Track":{"foreign-keys":[{"entity":"node://s_Sales Project/datasources/mysql8-19596d57491-77e814f082f3decb/database/Chinook/table/Employee","constraint":"Employee_VK","attributes":{"AlbumId":"Country"}}]},":Employee":{"constraints":{"Employee_VK":{"type":"vpk","attributes":["Country"]}}}}}},
