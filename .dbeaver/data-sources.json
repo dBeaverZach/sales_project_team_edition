@@ -1,55 +1,26 @@
 {
 	"folders": {},
 	"connections": {
-		"mysql8-19596d57491-77e814f082f3decb": {
-			"provider": "mysql-ee",
-			"driver": "mysql8",
-			"name": "MySQL",
+		"microsoft-196b764391a-18c2a7c53d0bfc95": {
+			"provider": "sqlserver-ee",
+			"driver": "microsoft",
+			"name": "SQL Server@192.168.1.19",
 			"save-password": true,
 			"configuration": {
 				"host": "192.168.1.19",
-				"port": "3306",
-				"url": "jdbc:mysql://192.168.1.19:3306/",
-				"configurationType": "MANUAL",
-				"home": "/opt/homebrew/Cellar/mysql/9.2.0",
-				"type": "dev",
-				"closeIdleConnection": true,
-				"properties": {
-					"allowPublicKeyRetrieval": "true"
-				},
-				"auth-model": "native",
-				"bootstrap": {
-					"autocommit": true
-				}
-			}
-		},
-		"cql-195a507d786-390b43314fde19ff": {
-			"provider": "mongodb",
-			"driver": "cql",
-			"name": "MongoDB",
-			"save-password": true,
-			"configuration": {
-				"host": "192.168.1.19",
-				"port": "27017",
-				"database": "local",
-				"url": "mongo://192.168.1.19:27017/local",
+				"port": "1433",
+				"database": "master",
+				"url": "jdbc:sqlserver://;serverName\u003d192.168.1.19;databaseName\u003dmaster",
 				"configurationType": "MANUAL",
 				"type": "dev",
 				"closeIdleConnection": true,
-				"provider-properties": {
-					"replicaSet": "",
-					"casualConsistency": "false",
-					"authMechanism": "NONE",
-					"authSource": "admin"
-				},
-				"auth-model": "mongodb_default",
+				"auth-model": "sqlserver_database",
 				"bootstrap": {
 					"autocommit": true
 				}
 			}
 		}
 	},
-	"virtual-models": {"mysql8-19596d57491-77e814f082f3decb":{"Chinook":{":Track":{"foreign-keys":[{"entity":"node://s_Sales Project/datasources/mysql8-19596d57491-77e814f082f3decb/database/Chinook/table/Employee","constraint":"Employee_VK","attributes":{"AlbumId":"Country"}}]},":Employee":{"constraints":{"Employee_VK":{"type":"vpk","attributes":["Country"]}}}}}},
 	"connection-types": {
 		"dev": {
 			"name": "Development",
