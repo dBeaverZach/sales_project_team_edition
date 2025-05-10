@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><dataset draft="false"><queries><query id="f36df82e-2719-4864-8498-3b2efbc88658" data-source="microsoft-196b7c3062f-97d6479667b8f94" queryText="SELECT x.* FROM master.dbo.Customer x" catalog="master" schema="dbo"/></queries></dataset>
