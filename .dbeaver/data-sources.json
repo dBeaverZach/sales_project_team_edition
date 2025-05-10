@@ -24,6 +24,7 @@
 			"provider": "sqlserver-ee",
 			"driver": "microsoft",
 			"name": "SQL Server@192.168.1.19",
+			"save-password": true,
 			"configuration": {
 				"host": "192.168.1.19",
 				"port": "1433",
