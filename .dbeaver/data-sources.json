@@ -19,25 +19,6 @@
 					"autocommit": true
 				}
 			}
-		},
-		"microsoft-196b7c3062f-97d6479667b8f94": {
-			"provider": "sqlserver-ee",
-			"driver": "microsoft",
-			"name": "SQL Server@192.168.1.19",
-			"save-password": true,
-			"configuration": {
-				"host": "192.168.1.19",
-				"port": "1433",
-				"database": "master",
-				"url": "jdbc:sqlserver://;serverName\u003d192.168.1.19;databaseName\u003dmaster",
-				"configurationType": "MANUAL",
-				"type": "dev",
-				"closeIdleConnection": true,
-				"auth-model": "sqlserver_database",
-				"bootstrap": {
-					"autocommit": true
-				}
-			}
 		}
 	},
 	"connection-types": {
